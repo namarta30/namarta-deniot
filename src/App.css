@@ -1,9 +1,7 @@
 .navbar-expand-lg .navbar-collapse {
     justify-content: end;
 }
-li {
-    text-decoration: none;
-}
+
 body {
     font-family: Zirkon Light, sans-serif;
     
