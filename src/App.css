@@ -1,0 +1,235 @@
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+}
+li {
+    text-decoration: none;
+}
+body {
+    font-family: Zirkon Light, sans-serif;
+    
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.nav-font {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.44;
+
+}
+
+.bg-grey {
+    background-color: #EDEDED;
+}
+
+.f-19 {
+    font-size: 45px;
+}
+.f-35{
+    font-size: 45px;
+}
+.f-14{
+    font-size: 14px ;
+}
+.color-grey {
+    color: #6E7275;
+}
+.mob-view{
+    display: none;
+}
+.video-container {
+    width: 100%;
+    height: 100vh;
+    margin-top: -80px;
+
+    background-color: rgb(173, 169, 169);
+    display: flex;
+    align-items: center;
+}
+.main-video{
+    height:120vh;
+    background-color:rgb(173, 169, 169)
+}
+
+.ReactPlayer {
+    position: absolute;
+    /* Or relative if you prefer */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-text {
+    position: absolute;
+    top: 62%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+}
+
+.video-text p {
+    font-size: 50px;
+    width: 80%;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-outer {
+
+    background-color: #8E8C8C;
+}
+.para-foot{
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    width: 365px;
+    /* max-width: 773px; */
+    padding: 0px 19px;
+    text-align: center;
+    margin: auto;
+    mix-blend-mode: overlay;
+    font-family: Zirkon Light, sans-serif;
+    font-size: 104px;
+    line-height: .97;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1.66814, 0, 1);
+
+
+}
+.page-links{
+    color: #fff;
+    transition: opacity .3s cubic-bezier(.25,.46,.45,.94);
+    cursor: none;
+    font-family: Zirkon Light, sans-serif;
+    font-size: 14px;
+    line-height: 1.63;
+    font-weight: 500;
+}
+
+.jean-div{
+    width: 20%;
+    position: relative;
+}
+.jean-div img{
+    width: 200px;
+   
+}
+.jean-text{
+    display: none;
+}
+.jean-desk{
+    position: absolute;
+    bottom: 0; /* Align text at the bottom */
+    left: 0;
+    right: 0;
+   /* Red background */
+   font-size: 25px;
+   font-weight: 400;
+    color: #fff; /* White text color */
+    padding: 10px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */ 
+    z-index: 2;
+}
+.jean-div:hover .jean-desk {
+    opacity: 1; /* Show text on hover */
+    
+  }
+  .jean-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(173, 169, 169); /* Red background for the overlay */
+    opacity: 0; /* Hide the overlay initially */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    z-index: 1; /* Make sure overlay is on top of the image */
+  }
+  
+  .jean-div:hover::before {
+    opacity: 0.7; /* Adjust opacity to show the overlay on hover */
+  }
+
+  .custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ff5722, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: background 0.3s ease, width 0.3s ease, height 0.3s ease;
+  }
+  
+  .custom-cursor:hover {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, #ff5722, rgba(255, 87, 34, 0));
+  }
+@media screen and (max-width: 500px) {
+   .para-foot{
+    font-size:87px ;
+   }
+   .page-links{
+    width: 31.2%;
+    text-align: center;
+    margin-bottom: 10px;
+   }
+   .desk-view{
+    display: none;
+   }
+   .mob-view{
+    display: block;
+    overflow: hidden;
+   }
+   .video-text p{
+   font-size: 40px;
+   width: 100%;
+   }
+   .mob-set{
+        /* width: 100vw; */
+        scale: 2.7;
+        height: 588px;
+   }
+   .main-video{
+    height: auto;
+   }
+   .f-19{
+    font-size: 25px;
+   }
+   .f-35{
+    font-size: 30px;
+   }
+   .video-text {
+
+    top: 50%;
+    left: 50%;
+   }
+   .jean-div{
+    width: 100%;
+   }
+   .jean-inner{
+    flex-wrap: wrap;
+   }
+   .bg-grey{
+    background-color: #D2D2D2;
+   }
+   .jean-text{
+    display: block;
+    color: #505559;
+    font-size: 25px;
+    margin: 12px 0;
+   }
+   .jean-desk{
+    display: none;
+   }
+   .jean-div img{
+    width: 100%;
+}
+  }
